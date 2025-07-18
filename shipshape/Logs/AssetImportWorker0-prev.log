@@ -15,7 +15,7 @@ C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61668
+64876
 Successfully changed project path to: C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
 C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14384]  Target information:
+Player connection [964]  Target information:
 
-Player connection [14384]  * "[IP] 192.168.1.27 [Port] 0 [Flags] 2 [Guid] 4261383988 [EditorId] 4261383988 [Version] 1048832 [Id] WindowsEditor(7,ME-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [964]  * "[IP] 192.168.1.27 [Port] 0 [Flags] 2 [Guid] 3794704142 [EditorId] 3794704142 [Version] 1048832 [Id] WindowsEditor(7,ME-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14384] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [14384] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [964] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [964] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 34.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 44.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.50f1 (c3db7f8bf9b1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Resources/UnitySubsystems
@@ -72,44 +72,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.026091 seconds.
-- Loaded All Assemblies, in  0.881 seconds
+Registered in 0.035550 seconds.
+- Loaded All Assemblies, in  1.170 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.574 seconds
-Domain Reload Profiling: 1448ms
-	BeginReloadAssembly (305ms)
+- Finished resetting the current domain, in  0.802 seconds
+Domain Reload Profiling: 1962ms
+	BeginReloadAssembly (407ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (81ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (150ms)
-	LoadAllAssembliesAndSetupDomain (315ms)
-		LoadAssemblies (299ms)
+	RebuildCommonClasses (111ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (203ms)
+	LoadAllAssembliesAndSetupDomain (405ms)
+		LoadAssemblies (395ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (310ms)
-			TypeCache.Refresh (306ms)
-				TypeCache.ScanAssembly (279ms)
+		AnalyzeDomain (401ms)
+			TypeCache.Refresh (397ms)
+				TypeCache.ScanAssembly (357ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (575ms)
+	FinalizeReload (803ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (472ms)
+		SetupLoadedEditorAssemblies (679ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (21ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (329ms)
-			ProcessInitializeOnLoadMethodAttributes (103ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (485ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,50 +118,50 @@ Domain Reload Profiling: 1448ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.514 seconds
+- Loaded All Assemblies, in  2.039 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.334 seconds
-Domain Reload Profiling: 2838ms
-	BeginReloadAssembly (341ms)
+- Finished resetting the current domain, in  2.021 seconds
+Domain Reload Profiling: 4046ms
+	BeginReloadAssembly (425ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (86ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (122ms)
-	LoadAllAssembliesAndSetupDomain (932ms)
-		LoadAssemblies (720ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (101ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (125ms)
+	LoadAllAssembliesAndSetupDomain (1341ms)
+		LoadAssemblies (1061ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (414ms)
-			TypeCache.Refresh (363ms)
-				TypeCache.ScanAssembly (333ms)
-			ScanForSourceGeneratedMonoScriptInfo (39ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1335ms)
+		AnalyzeDomain (534ms)
+			TypeCache.Refresh (471ms)
+				TypeCache.ScanAssembly (432ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (2023ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (997ms)
+		SetupLoadedEditorAssemblies (1565ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (15ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (141ms)
-			ProcessInitializeOnLoadAttributes (756ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
-			AfterProcessingInitializeOnLoad (22ms)
+			BeforeProcessingInitializeOnLoad (201ms)
+			ProcessInitializeOnLoadAttributes (1218ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (39ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 13.95 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (22ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.41 seconds
+Refreshing native plugins compatible for Editor in 30.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3131 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (54.9 KB). Loaded Objects now: 3597.
-Memory consumption went from 118.9 MB to 118.9 MB.
-Total: 11.024800 ms (FindLiveObjects: 0.944700 ms CreateObjectMapping: 0.898500 ms MarkObjects: 8.881800 ms  DeleteObjects: 0.297500 ms)
+Unloading 3541 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (54.6 KB). Loaded Objects now: 4009.
+Memory consumption went from 128.2 MB to 128.2 MB.
+Total: 12.374000 ms (FindLiveObjects: 1.348400 ms CreateObjectMapping: 0.805300 ms MarkObjects: 9.848300 ms  DeleteObjects: 0.368900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -179,165 +179,220 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1656936.770991 seconds.
-  path: Assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean
-  artifactKey: Guid(90a18a58f2978c449bce8869261c6ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean using Guid(90a18a58f2978c449bce8869261c6ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ca339dbe28d9d9b83fa27f385b3a6f64') in 0.005943 seconds
+  Time since last request: 1664132.440743 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Textures/ContainerBeige2K_basecolor.tga
+  artifactKey: Guid(c9ed50a817b55654aa2890eac6e50a97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Textures/ContainerBeige2K_basecolor.tga using Guid(c9ed50a817b55654aa2890eac6e50a97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a50befa17a9c8b26a71c7fad4f3cbdc3') in 0.444096 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont20FBeige.prefab
-  artifactKey: Guid(6d804e78e99fe9b4cbe149e7cdaea98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont20FBeige.prefab using Guid(6d804e78e99fe9b4cbe149e7cdaea98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1778feb47ce635de29396f635c7ddd35') in 0.968692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Sayantan/Props/Large
-  artifactKey: Guid(e2e3095f17094284e95606fae56fd4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Props/Large using Guid(e2e3095f17094284e95606fae56fd4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '08c21a8ae934c163c0c09a2708bd9460') in 0.001566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/Sayantan/Props/Large/Container_FREE
-  artifactKey: Guid(3ba058b8fc43dbf41bdfa0753f8818be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Props/Large/Container_FREE using Guid(3ba058b8fc43dbf41bdfa0753f8818be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'cd75c1f16b575fd8fec66fd5b11dfbb8') in 0.001668 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Sayantan
-  artifactKey: Guid(118dc672fd1bad14c98e98c59321330d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan using Guid(118dc672fd1bad14c98e98c59321330d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f950ad4a27059bf1a57386319a1838be') in 0.000918 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont40FBeige.prefab
-  artifactKey: Guid(4767f7b06d6cd0f478abad98f4bce002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont40FBeige.prefab using Guid(4767f7b06d6cd0f478abad98f4bce002) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ff2532f267ed9ba92b9755a84c3733da') in 0.044990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 102.585541 seconds.
-  path: Assets/Sayantan/Misc/ConcIndustrial_basecolor.tga
-  artifactKey: Guid(6ed256ad0777d6d4ba68a9ca5a3a4037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Misc/ConcIndustrial_basecolor.tga using Guid(6ed256ad0777d6d4ba68a9ca5a3a4037) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '43654f5eb47c53d32093309ad354b4d5') in 0.056011 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Sayantan/Misc/Mat_ConcIndustrial_Standard.mat
-  artifactKey: Guid(db098849f518b034eb48528ba09be94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Misc/Mat_ConcIndustrial_Standard.mat using Guid(db098849f518b034eb48528ba09be94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '984afd710c1c8758dfd61c802ca63e00') in 0.088909 seconds
+  Time since last request: 0.000134 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Materials/Mat_ContBlue2K.mat
+  artifactKey: Guid(e7dd4f2fc42762b44bbb1811be64d157) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Materials/Mat_ContBlue2K.mat using Guid(e7dd4f2fc42762b44bbb1811be64d157) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '95cf966e837c28963a72eab3a4dfa91a') in 0.148542 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Sayantan/Misc/ConcIndustrial_normal.tga
-  artifactKey: Guid(34d0451158d99134d8d574453e6fe9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Misc/ConcIndustrial_normal.tga using Guid(34d0451158d99134d8d574453e6fe9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '04a47530ffe3392a04912057219c782d') in 0.048043 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Sayantan/Misc/Mat_Skybox_Day.mat
-  artifactKey: Guid(f6fc61f3f8a8e2a469306d29b65d5c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sayantan/Misc/Mat_Skybox_Day.mat using Guid(f6fc61f3f8a8e2a469306d29b65d5c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '751ffd491f8a8ed63cc1f0e2a94e9f01') in 0.184389 seconds
+  Time since last request: 0.000072 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-18.exr
+  artifactKey: Guid(420c8966bd5994148aeb0cf492212d7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-18.exr using Guid(420c8966bd5994148aeb0cf492212d7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c97e8cd2423d96e10f9ca9ad28182a5a') in 0.052801 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.209 seconds
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  7.479 seconds
-Domain Reload Profiling: 10668ms
-	BeginReloadAssembly (836ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (185ms)
-	RebuildCommonClasses (300ms)
-	RebuildNativeTypeToScriptingClass (49ms)
-	initialDomainReloadingComplete (397ms)
-	LoadAllAssembliesAndSetupDomain (1605ms)
-		LoadAssemblies (1988ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (124ms)
-			TypeCache.Refresh (37ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (37ms)
-			ResolveRequiredComponents (44ms)
-	FinalizeReload (7481ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1120ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (185ms)
-			ProcessInitializeOnLoadAttributes (832ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (26ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 67.11 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3646.
-Memory consumption went from 122.7 MB to 122.7 MB.
-Total: 58.875100 ms (FindLiveObjects: 8.558400 ms CreateObjectMapping: 7.864300 ms MarkObjects: 42.147300 ms  DeleteObjects: 0.300700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/GameManager.cs: 9933fbcc6190e2a9171c2ec8808a053e -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 4ee706c12805feacb083aae47980387a -> 
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-21.exr
+  artifactKey: Guid(51e04aec64e96cd4eacd90a9b403c349) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-21.exr using Guid(51e04aec64e96cd4eacd90a9b403c349) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e7d3932358cd162b867a8d2d526fe7c2') in 0.034364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-3.exr
+  artifactKey: Guid(c974d6be1b31dcf41ace62c4b779f4c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-3.exr using Guid(c974d6be1b31dcf41ace62c4b779f4c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1aec74e079b0950bf7d68a76730afde8') in 0.032509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/Lightmap-0_comp_light.exr
+  artifactKey: Guid(c50019650f3210b4b9b3e8f44a3dae52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/Lightmap-0_comp_light.exr using Guid(c50019650f3210b4b9b3e8f44a3dae52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1fefe83d93041a89ac1dc291eb12b118') in 0.042588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'da5b9a3b901ce36812f870ba7a1044b4') in 0.017388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Textures/ContainerBlue2K_basecolor.tga
+  artifactKey: Guid(ede2fcb755ba55e4ea9d3135a807fbe0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Textures/ContainerBlue2K_basecolor.tga using Guid(ede2fcb755ba55e4ea9d3135a807fbe0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fe13297c9ba7980530195496d25d2d30') in 0.043979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-10.exr
+  artifactKey: Guid(2eaba5504887c5a4fa3bc45320aa8885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-10.exr using Guid(2eaba5504887c5a4fa3bc45320aa8885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2708de40a050e5a7023dc87d2ee68ad3') in 0.035959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Scripts/PlayerClass.cs
+  artifactKey: Guid(343094d7d57aaba4cac70c7ec6796993) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/PlayerClass.cs using Guid(343094d7d57aaba4cac70c7ec6796993) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ff3044cebe9d5a93743c713b3af65c06') in 0.041910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-14.exr
+  artifactKey: Guid(ff81d4e1b5588654ca79d014a9bffc3d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-14.exr using Guid(ff81d4e1b5588654ca79d014a9bffc3d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '96de281b24608cf4c32dd9e60539c071') in 0.037949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-17.exr
+  artifactKey: Guid(3110e02367fa562499b4bc042ab3bdf6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-17.exr using Guid(3110e02367fa562499b4bc042ab3bdf6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'dac6f81aeeaf9715f16c6a9394d4ef44') in 0.037158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-8.exr
+  artifactKey: Guid(33fe4e0ada2c8f440b1952a268ccb691) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-8.exr using Guid(33fe4e0ada2c8f440b1952a268ccb691) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5a262288252c673a2f4209b8e1600a2a') in 0.044585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-2.exr
+  artifactKey: Guid(77955f19ad5b28d45a77d1f8914fd455) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-2.exr using Guid(77955f19ad5b28d45a77d1f8914fd455) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f108853a54dee4eb6e7845aceb6fbaf7') in 0.035525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-12.exr
+  artifactKey: Guid(675845be7fe288a488a63ce3217f8529) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-12.exr using Guid(675845be7fe288a488a63ce3217f8529) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9ccf442a3e2006f752156ae8f6f870a0') in 0.037638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-5.exr
+  artifactKey: Guid(d7e7555f3a00ae6488b0d80566e43c12) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-5.exr using Guid(d7e7555f3a00ae6488b0d80566e43c12) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '29c1da22b90d204bbca1e871f4127bd4') in 0.034486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-21.exr
+  artifactKey: Guid(ce27a44866aa7cf4898dc28bb9a075ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-21.exr using Guid(ce27a44866aa7cf4898dc28bb9a075ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'de77c8b875b3eacb60431e16d53bb088') in 0.031974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard.unity
+  artifactKey: Guid(5e9469c5618dc404fb14d30ea14139dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard.unity using Guid(5e9469c5618dc404fb14d30ea14139dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3846dc90da45ca0975e19044a731f99f') in 0.014521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-22.exr
+  artifactKey: Guid(3c777d3c29c77054fb50d95822f75791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-22.exr using Guid(3c777d3c29c77054fb50d95822f75791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0b30d640b3c283e2da56da0a3f0fb107') in 0.035464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-24.exr
+  artifactKey: Guid(3c5a841473dff344c8b8bc582882f5d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-24.exr using Guid(3c5a841473dff344c8b8bc582882f5d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0a72187b7aed110d7a5a8b99d7975257') in 0.035740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-6.exr
+  artifactKey: Guid(fe6425605d3a9ef46a86221e099a023e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-6.exr using Guid(fe6425605d3a9ef46a86221e099a023e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '30659c0c3656b97a96f76f7e8a1b55b1') in 0.035851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-8.exr
+  artifactKey: Guid(d00c9f7bce7597442bc99ca46787ec35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-8.exr using Guid(d00c9f7bce7597442bc99ca46787ec35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9bd7313759e27d446b02d3521e9b7179') in 0.030496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/ReadMe.txt
+  artifactKey: Guid(2456aa18592fe3b4cb8a4cbc75b852a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/ReadMe.txt using Guid(2456aa18592fe3b4cb8a4cbc75b852a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e508a93faa5235ae0614929e62a1b09e') in 0.018302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-1.exr
+  artifactKey: Guid(e3094626905362e49ae67afa7729b616) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-1.exr using Guid(e3094626905362e49ae67afa7729b616) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'be2ea7009519b55133cb69404e028f53') in 0.031641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
