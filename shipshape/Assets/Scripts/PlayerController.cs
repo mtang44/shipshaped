@@ -26,19 +26,21 @@ public class NewBehaviourScript : MonoBehaviour
     public Camera ThirdPOVCamera;
     [SerializeField] LayerMask layermask;
     Vector3 moveDirection = Vector3.zero;
-    Vector3 thirdpov;
-    Vector3 firstpov;
+    Quaternion rotationAmount;
+    
 
 
     private void OnEnable()
     {
         playerControls.Enable();
         grabContainer.Enable();
+       
     }
     private void OnDisable()
     {
         playerControls.Disable();
         grabContainer.Disable();
+       
 
     }
     // Start is called before the first frame update
@@ -46,15 +48,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         holdingContainer = false;
         GameManager.Instance.player = gameObject;
-        firstpov = new Vector3(x: 5, y: 5, z: 10);
-        thirdpov = new Vector3(x: 0, y: 4, z: -7);
+        
+        // firstpov = new Vector3(x: 5, y: 5, z: 10);
+        // thirdpov = new Vector3(x: 0, y: 4, z: -7);
         showOverHeadView();
         
-
-
-        // sideCamera.enabled = false;
-
-
     }
     // Update is called once per frame
     void Update()
@@ -91,7 +89,7 @@ public class NewBehaviourScript : MonoBehaviour
 
 
         }
-        else if (grabContainer.WasPressedThisFrame() && holdingContainer)
+        else if (grabContainer.WasPerformedThisFrame() && holdingContainer)
         {
             // drop container code 
             showOverHeadView();
@@ -103,12 +101,27 @@ public class NewBehaviourScript : MonoBehaviour
     }
     private void updateMoveDirection()
     {
+        // read player movement and rotation
         moveDirection = playerControls.ReadValue<Vector3>();
-        rb.velocity = new Vector3(x: moveDirection.x * moveSpeed, y: moveDirection.y * moveSpeed, z: moveDirection.z * moveSpeed);
+        Vector3 worldDirection = transform.TransformDirection(moveDirection); // Rotates the input to match the player’s orientation
+
+        rb.velocity = worldDirection * moveSpeed; 
+
+        if (Input.GetKey(KeyCode.Q) )
+        {
+            rotationAmount = Quaternion.Euler(rb.transform.eulerAngles.x, rb.transform.eulerAngles.y - .5f, rb.transform.eulerAngles.z);
+        }
+        if (Input.GetKey(KeyCode.E) )
+        {
+            rotationAmount = Quaternion.Euler(rb.transform.eulerAngles.x, rb.transform.eulerAngles.y + .5f, rb.transform.eulerAngles.z);
+        }
         if (holdingContainer)
         {
             selectedContainer.transform.position = new Vector3(x: transform.position.x, y: transform.position.y - 3, z: transform.position.z);
+            selectedContainer.transform.rotation = rb.transform.rotation;
         }
+        rb.transform.rotation = rotationAmount;
+        
     }
     public void showOverHeadView()
     {
