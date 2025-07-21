@@ -3,7 +3,11 @@ guid: d11219c86b92ba144a58446e7cf70162
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - selectedContainer: {instanceID: 0}
+  - birdEyeCamera: {fileID: 3620010277060594531, guid: ea8056c21b11da74188817f8ec785e03, type: 3}
+  - sideCamera: {fileID: 3071419599872301993, guid: d4b0b952e8e583f4393cf057896e2c7e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
