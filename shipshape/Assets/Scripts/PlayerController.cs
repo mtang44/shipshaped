@@ -73,18 +73,21 @@ public class NewBehaviourScript : MonoBehaviour
             // creates a raycast from the bottom of the player claw and checks for container
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out RaycastHit hitinfo, 2f, layermask))
             {
-                Debug.Log("Picked up a container");
+                // Debug.Log("Picked up a container");
+
                 // code to pick up container
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down)* hitinfo.distance,Color.green, 10f);
-                showSideView();
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hitinfo.distance, Color.green, 10f);
+                showThirdView();
                 holdingContainer = true;
                 selectedContainer = hitinfo.rigidbody.gameObject;
+                selectedContainer.GetComponent<Rigidbody>().isKinematic = false;
+                
                
             }
             else
             {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down)* 3,Color.red, 10f);
-                Debug.Log("Not touching");
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 3, Color.red, 10f);
+                // Debug.Log("Not touching");
             }
 
 
@@ -125,14 +128,14 @@ public class NewBehaviourScript : MonoBehaviour
     }
     public void showOverHeadView()
     {
-        Debug.Log("switching cam to top");
+        // Debug.Log("switching cam to top");
         BottomCamera.enabled = true;
         ThirdPOVCamera.enabled = false;
        // MainCamera.transform.position = firstpov;
     }
-    public void showSideView()
+    public void showThirdView()
     {
-        Debug.Log("switching cam to side");
+        // Debug.Log("switching cam to side");
         ThirdPOVCamera.enabled = true;
         BottomCamera.enabled = false;
        // MainCamera.transform.position = thirdpov;
