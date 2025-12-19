@@ -715,6 +715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Container_Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 81430398545662718, guid: 68bcfa5e90aaedf41b4ee9d956e76564, type: 3}
+      propertyPath: m_TagString
+      value: Ship
+      objectReference: {fileID: 0}
     - target: {fileID: 750583985696655428, guid: 68bcfa5e90aaedf41b4ee9d956e76564, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -814,7 +818,7 @@ GameObject:
   - component: {fileID: 613903398}
   - component: {fileID: 613903397}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: ocean plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -965,6 +969,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 2.2, z: 5}
   m_Center: {x: 0, y: 1.2, z: 0}
+--- !u!114 &658681523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658681519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add71d3b07073e541b6384010bb3dc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onShip: 0
+  rb: {fileID: 658681520}
 --- !u!1 &670497217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1539903121652933825, guid: e7048ef8e8e89304a84bcda5baaa6dd5, type: 3}
@@ -2669,6 +2687,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4092481845355988580, guid: 6d804e78e99fe9b4cbe149e7cdaea98e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 658681522}
+    - targetCorrespondingSourceObject: {fileID: 4092481845355988580, guid: 6d804e78e99fe9b4cbe149e7cdaea98e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 658681523}
   m_SourcePrefab: {fileID: 100100000, guid: 6d804e78e99fe9b4cbe149e7cdaea98e, type: 3}
 --- !u!1001 &1678049643
 PrefabInstance:

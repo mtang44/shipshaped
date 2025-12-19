@@ -20,15 +20,15 @@ public class ContainerController : MonoBehaviour
             checkStillOnShip();
         }
     }
-    // void OnTriggerEnter(Collider other )
-    // {
-    //     if (other.gameObject.tag == "inventory" && !onShip)
-    //     {
-    //         rb.isKinematic = true;
-    //         setOnShip(true);
-    //         Debug.Log("container on ship");
-    //     }
-    // }
+    void OnTriggerEnter(Collider other )
+    {
+        if (other.gameObject.tag == "inventory" && !onShip)
+        {
+            rb.isKinematic = true;
+            setOnShip(true);
+            Debug.Log("container on ship");
+        }
+    }
     public void setOnShip(bool state)
     {
         this.onShip = state;
@@ -39,16 +39,17 @@ public class ContainerController : MonoBehaviour
     }
     private void checkStillOnShip()
     {
-        Ray ray = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(ray, out RaycastHit hit, 1f) && hit.collider.CompareTag("inventory"))
+        Debug.DrawRay(transform.position,Vector3.down,Color.green, .1f);
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, .1f) && (hit.collider.CompareTag("Ship") || hit.collider.CompareTag("inventory")))
         {
-
             Debug.Log("Container still on the ship");
-
         }
         else
         {
-            Debug.Log("Container removed from on the ship");
+            Debug.Log("Container removed from ship");
+            setOnShip(false);
+            rb.isKinematic = false;
         }
     }
 }

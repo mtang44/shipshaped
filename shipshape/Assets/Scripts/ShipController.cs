@@ -24,7 +24,7 @@ public class ShipController : MonoBehaviour
        
         if (other.gameObject.layer == 3)
         {
-            ContainerController currentContainerScript = other.GetComponentInParent<ContainerController>();
+            ContainerController currentContainerScript = other.GetComponent<ContainerController>();
             if (!currentContainerScript.getOnShip())
             {
                 inventory.Add(other.gameObject);
