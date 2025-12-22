@@ -21,23 +21,25 @@ public class ShipController : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-       
         if (other.gameObject.layer == 3)
         {
-            ContainerController currentContainerScript = other.GetComponent<ContainerController>();
-            if (!currentContainerScript.getOnShip())
+            
+            ContainerController triggerContainer = other.GetComponent<ContainerController>();
+            if (!triggerContainer.getOnShip())
             {
                 inventory.Add(other.gameObject);
-                // Debug.Log("container added to ship ");
+                 Debug.Log("container added to ship ");
                 containerCount += 1;
-                // Debug.Log("onShip set to true");
-                // Debug.Log("# of container = " + containerCount);
+                Debug.Log("# of container = " + containerCount);
+                Debug.Log("onShip set to true");
+                triggerContainer.setOnShip(true);
             }
+            else Debug.Log("container already on ship");
         }
     }
     // void OnTriggerExit(Collider other)
     // {
-
+    //     Debug.Log("ship detected exit collision");
 
     //     if (other.gameObject.layer == 3)
     //     {
@@ -53,7 +55,7 @@ public class ShipController : MonoBehaviour
     //             Debug.Log("# of containers = " + containerCount);
     //         }
     //     }
-    // }
+   // }
 
 public void checkShipBalance()
     {
