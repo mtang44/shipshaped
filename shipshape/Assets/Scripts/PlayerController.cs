@@ -81,6 +81,7 @@ public class NewBehaviourScript : MonoBehaviour
                 holdingContainer = true;
                 selectedContainer = hitinfo.rigidbody.gameObject;
                 selectedContainer.GetComponent<Rigidbody>().isKinematic = false;
+                selectedContainer.transform.SetParent(null); // removes child container from parent truck
                 
                
             }
