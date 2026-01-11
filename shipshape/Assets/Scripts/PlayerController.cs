@@ -11,7 +11,7 @@ using System.Net.NetworkInformation;
 using Unity.VisualScripting;
 public class NewBehaviourScript : MonoBehaviour
 {
-    // public PLayerClass player_cass; add this once player class added
+     public PlayerClass player_class;
 
     // public Unit unit // not sure what this does 
 

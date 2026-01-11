@@ -71,6 +71,7 @@
     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeHelper.cs" />
     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WateverVolumeFloater.cs" />
     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeBase.cs" />
+    <Compile Include="Assets\Scripts\Ground_PlayerController.cs" />
     <Compile Include="Assets\Scripts\ShipController.cs" />
     <Compile Include="Assets\Scripts\EventBus.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />

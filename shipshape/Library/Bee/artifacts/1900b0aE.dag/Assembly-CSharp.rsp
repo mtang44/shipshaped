@@ -364,6 +364,7 @@
 "Assets/Scripts/ContainerController.cs"
 "Assets/Scripts/EventBus.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Ground_PlayerController.cs"
 "Assets/Scripts/PlayerClass.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ShipController.cs"
