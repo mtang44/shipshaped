@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 using UnityEditor.Callbacks;
 using System.Net.NetworkInformation;
 using Unity.VisualScripting;
+using System;
 public class GroundPlayerController : MonoBehaviour
 {
     // public PlayerClass player_class;
@@ -16,49 +17,80 @@ public class GroundPlayerController : MonoBehaviour
     // public Unit unit // not sure what this does 
 
     // movement controls
-    public float moveSpeed = 5f;
-    public InputAction playerControls;
-    public Rigidbody rb;
+    
+    public float turnInput;
+    public float moveInput;
+    public Rigidbody playerRB;
     [SerializeField] LayerMask layermask;
-    Vector3 moveDirection = Vector3.zero;
     
     
+    [Header("References")]
+    private CharacterController controller;
+    [Header("Movement Settings")]
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float turnSpeed = 10f;
 
 
     private void OnEnable()
     {
-        playerControls.Enable();
-    
-       
+     
     }
     private void OnDisable()
     {
-        playerControls.Disable();
-      
+        
     }
     // Start is called before the first frame update
     void Start()
     {
- 
         GameManager.Instance.player = gameObject;
-   
-        
+        controller = GetComponent<CharacterController>();
+
     }
     // Update is called once per frame
     void Update()
     {
         // reads user input and creates direction
+
         checkPlayerInput();
+        Movement();
     }
     private void checkPlayerInput()
     {
-        updateMoveDirection();
+        moveInput = Input.GetAxis("Vertical");
+        turnInput = Input.GetAxis("Horizontal");
         
     }
-
-    private void updateMoveDirection()
+    private void GroundMovement()
     {
-         moveDirection = playerControls.ReadValue<Vector3>();
-        rb.velocity = moveDirection * moveSpeed; 
+        
+        Vector3 move = new Vector3(turnInput, 0, moveInput);
+        
+        move.y = 0;
+        move *= moveSpeed;
+        controller.Move(move * Time.deltaTime);
+        //playerRB.angularVelocity = Vector3.zero;
     }
+    private void Movement()
+    {
+        GroundMovement();
+        Turn();
+    }
+    private void Turn()
+    {
+        if(MathF.Abs(turnInput) > 0 || Mathf.Abs(moveInput) > 0)
+        {
+            Vector3 currentLookDirection = controller.velocity.normalized;
+            currentLookDirection.y = 0;
+            Quaternion targetRotation = Quaternion.LookRotation(currentLookDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
+        }
+    }
+ // old movement system
+    // private void updateMoveDirection()
+    // {
+       
+    //     moveDirection = playerControls.ReadValue<Vector3>();
+    //     rb.velocity = moveDirection * moveSpeed; 
+    // }
+    
 }
