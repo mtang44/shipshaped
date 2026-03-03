@@ -109,7 +109,7 @@ public class NewBehaviourScript : MonoBehaviour
         moveDirection = playerControls.ReadValue<Vector3>();
         Vector3 worldDirection = transform.TransformDirection(moveDirection); // Rotates the input to match the player’s orientation
 
-        rb.velocity = worldDirection * moveSpeed; 
+        rb.linearVelocity = worldDirection * moveSpeed; 
 
         if (Input.GetKey(KeyCode.Q) )
         {

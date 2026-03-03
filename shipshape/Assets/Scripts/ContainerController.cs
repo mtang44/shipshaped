@@ -24,7 +24,7 @@ public class ContainerController : MonoBehaviour
     {
         if (other.gameObject.tag == "inventory" && !onShip)
         {
-            rb.velocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
            // rb.isKinematic = true;
             Debug.Log("container detected ship");
         }

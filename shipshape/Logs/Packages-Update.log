@@ -41,3 +41,23 @@ The following packages were updated:
   com.unity.textmeshpro from version 3.0.6 to 3.0.7
   com.unity.timeline from version 1.6.2 to 1.7.6
   com.unity.visualscripting from version 1.7.6 to 1.9.4
+
+=== Mon Mar  2 21:35:47 2026
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.modules.adaptiveperformance@1.0.0
+  com.unity.modules.vectorgraphics@1.0.0
+  com.unity.modules.accessibility@1.0.0
+  com.unity.multiplayer.center@1.0.1
+The following packages were updated:
+  com.unity.collab-proxy from version 2.8.2 to 2.11.3
+  com.unity.feature.development from version 1.0.1 to 1.0.2
+  com.unity.inputsystem from version 1.11.2 to 1.18.0
+  com.unity.timeline from version 1.7.6 to 1.8.10
+  com.unity.ugui from version 1.0.0 to 2.0.0
+  com.unity.visualscripting from version 1.9.4 to 1.9.9
+The following packages were removed:
+  com.unity.textmeshpro@3.0.7
