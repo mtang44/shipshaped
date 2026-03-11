@@ -9,7 +9,8 @@ using UnityEngine.EventSystems;
 using System.Net.NetworkInformation;
 using Unity.VisualScripting;
 using System;
-public class GroundPlayerController : MonoBehaviour
+using Unity.Netcode;
+public class GroundPlayerController : NetworkBehaviour
 {
     // public PlayerClass player_class;
 
@@ -49,7 +50,7 @@ public class GroundPlayerController : MonoBehaviour
     void Update()
     {
         // reads user input and creates direction
-
+        if (!IsOwner) return;
         checkPlayerInput();
         Movement();
     }
