@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 1386222704776954243}
   - component: {fileID: 5914245814039573061}
   - component: {fileID: 7616702484804268514}
-  - component: {fileID: 2843748021987109268}
+  - component: {fileID: 1110475793533607240}
   m_Layer: 0
   m_Name: W_LT_Truck
   m_TagString: Untagged
@@ -708,7 +708,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.032876, y: 7.866477, z: 24.593437}
   m_Center: {x: -0.74183893, y: 6.575152, z: 0.6545634}
---- !u!114 &2843748021987109268
+--- !u!114 &1110475793533607240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -717,10 +717,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5116514529672395053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3199efb015493a4090f471abf73526a, type: 3}
+  m_Script: {fileID: 11500000, guid: 847a9f5dc92e68a4c80f887b589a172b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TruckController
-  moveSpeed: 5
+  m_EditorClassIdentifier: Assembly-CSharp::Truck_Controller
+  moveSpeed: 10
 --- !u!1 &5606964688209572076
 GameObject:
   m_ObjectHideFlags: 0

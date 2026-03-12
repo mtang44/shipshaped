@@ -197,7 +197,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3958609379848094512, guid: 6880438938f06c946955d2b004d848fe, type: 3}
       insertIndex: 2
-      addedObject: {fileID: 8024054166268301173}
+      addedObject: {fileID: 9077640426362533238}
   m_SourcePrefab: {fileID: 100100000, guid: 6880438938f06c946955d2b004d848fe, type: 3}
 --- !u!4 &182160665070024505 stripped
 Transform:
@@ -209,7 +209,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3958609379848094512, guid: 6880438938f06c946955d2b004d848fe, type: 3}
   m_PrefabInstance: {fileID: 158678983695320602}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8024054166268301173
+--- !u!114 &9077640426362533238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,10 +218,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3809046859647468842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3199efb015493a4090f471abf73526a, type: 3}
+  m_Script: {fileID: 11500000, guid: 847a9f5dc92e68a4c80f887b589a172b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TruckController
-  moveSpeed: 5
+  m_EditorClassIdentifier: Assembly-CSharp::Truck_Controller
+  moveSpeed: 10
 --- !u!1001 &1752911477034858758
 PrefabInstance:
   m_ObjectHideFlags: 0

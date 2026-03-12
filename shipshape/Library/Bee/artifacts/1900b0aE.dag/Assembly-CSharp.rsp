@@ -497,8 +497,8 @@
 "Assets/Scripts/PlayerClass.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ShipController.cs"
-"Assets/Scripts/Truck Controller.cs"
-"Assets/Scripts/Truck Spawner.cs"
+"Assets/Scripts/Truck_Controller.cs"
+"Assets/Scripts/Truck_Spawner.cs"
 -langversion:9.0
 /deterministic
 /optimize+
