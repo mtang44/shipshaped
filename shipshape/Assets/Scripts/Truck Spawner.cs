@@ -13,7 +13,7 @@ public class TruckSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M))
+        if(Input.GetKeyDown(KeyCode.M) || GetComponentInChildren<TruckController>() == null)
         {
            SpawnNewTruck(); 
         }
@@ -23,6 +23,7 @@ public class TruckSpawner : MonoBehaviour
     {
         System.Random random = new System.Random();
         int index = random.Next(truckPrefabs.Length);
-        Instantiate(truckPrefabs[index],transform.position, Quaternion.Euler(0, 90, 0));
+        var newTruck =  Instantiate(truckPrefabs[index],transform.position, Quaternion.Euler(0, 90, 0));
+        newTruck.transform.parent = gameObject.transform;
     }
 }
