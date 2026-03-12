@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.9f1 (7a9955a4f2fa) revision 8034645'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15706 MB
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 16088 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-zande" at "2026-03-12T03:24:22.0107763Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-12T00:53:00Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcst2" at "2026-03-12T00:53:00.3020803Z"
+Date: 2026-03-12T03:24:22Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe
@@ -15,13 +15,13 @@ C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
+C:/Users/zande/shipshaped/shipshape
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63643
+58726
 -licensingIpc
-LicenseClient-mcst2
+LicenseClient-zande
 -job-worker-count
 7
 -background-job-worker-count
@@ -30,8 +30,8 @@ LicenseClient-mcst2
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
-C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
+Successfully changed project path to: C:/Users/zande/shipshaped/shipshape
+C:/Users/zande/shipshaped/shipshape
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -67,12 +67,12 @@ C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [29896]  Target information:
+Player connection [8600]  Target information:
 
-Player connection [29896]  * "[IP] 169.233.202.223 [Port] 0 [Flags] 2 [Guid] 1209037261 [EditorId] 1209037261 [Version] 1048832 [Id] WindowsEditor(7,ME-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8600]  * "[IP] 169.233.143.46 [Port] 0 [Flags] 2 [Guid] 2118601780 [EditorId] 2118601780 [Version] 1048832 [Id] WindowsEditor(7,Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [29896] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [29896] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8600] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8600] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,60 +84,69 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 28.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.9f1 (7a9955a4f2fa)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/mcst2/OneDrive/Documents/Desktop/Unity/shipshape/shipshape/Assets
+[Subsystems] Discovering subsystems at path C:/Users/zande/shipshaped/shipshape/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Graphics (ID=0x164c)
-    Vendor:   ATI
-    VRAM:     7853 MB
-    Driver:   31.0.21923.1000
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   32.0.15.6636
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016720 seconds.
-- Loaded All Assemblies, in  1.719 seconds
+Registered in 0.005887 seconds.
+- Loaded All Assemblies, in  0.802 seconds
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              546eea6948d3435fba2b5320220684b8
+  Correlation Id:          d8f0a4fa29e6df55d5022778c6a97fcb
+  External correlation Id: 3140224648170103768
+  Machine Id:              qCq8wQYUY5SaLuNPTyh/KSN2uTo=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-zande" (connect: 0.00s, validation: 0.00s, handshake: 1.78s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-zande-notifications" at "2026-03-12T03:24:23.7900093Z"
+[Licensing::Module] Licensing Background thread has ended after 1.78s
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.079 seconds
-Domain Reload Profiling: 3780ms
-	BeginReloadAssembly (583ms)
+- Finished resetting the current domain, in  0.778 seconds
+Domain Reload Profiling: 1571ms
+	BeginReloadAssembly (254ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (147ms)
-	RebuildNativeTypeToScriptingClass (47ms)
-	initialDomainReloadingComplete (203ms)
-	LoadAllAssembliesAndSetupDomain (719ms)
-		LoadAssemblies (564ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (359ms)
+		LoadAssemblies (245ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (710ms)
-			TypeCache.Refresh (705ms)
-				TypeCache.ScanAssembly (658ms)
+		AnalyzeDomain (353ms)
+			TypeCache.Refresh (349ms)
+				TypeCache.ScanAssembly (323ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (2080ms)
+	FinalizeReload (779ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1920ms)
+		SetupLoadedEditorAssemblies (693ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (202ms)
-			SetLoadedEditorAssemblies (15ms)
-			BeforeProcessingInitializeOnLoad (470ms)
-			ProcessInitializeOnLoadAttributes (861ms)
-			ProcessInitializeOnLoadMethodAttributes (372ms)
+			InitializePlatformSupportModulesInManaged (88ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (181ms)
+			ProcessInitializeOnLoadAttributes (305ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -146,101 +155,664 @@ Domain Reload Profiling: 3780ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              6c10dcf56e2f4d2ca43791fe7f7986f7
-  Correlation Id:          09c86160344e8cd6d36681edbfddfd5e
-  External correlation Id: 5489973499027526820
-  Machine Id:              3nfwJrluU4j5ieGIJItV8yVp9ds=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mcst2" (connect: 0.00s, validation: 0.06s, handshake: 8.27s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcst2-notifications" at "2026-03-12T00:53:08.6551719Z"
-[Licensing::Module] Licensing Background thread has ended after 8.35s
-[Licensing::Module] Licensing is initialized (took 1.22s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 20067351840168-UnityPersXXXX
+  Id: 1375903567904-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  4.915 seconds
-Refreshing native plugins compatible for Editor in 10.71 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.474 seconds
+Refreshing native plugins compatible for Editor in 3.65 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 12.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.17 ms, found 3 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.245 seconds
-Domain Reload Profiling: 8130ms
-	BeginReloadAssembly (1924ms)
+- Finished resetting the current domain, in  1.445 seconds
+Domain Reload Profiling: 2907ms
+	BeginReloadAssembly (319ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (99ms)
-	RebuildCommonClasses (141ms)
-	RebuildNativeTypeToScriptingClass (47ms)
-	initialDomainReloadingComplete (261ms)
-	LoadAllAssembliesAndSetupDomain (2510ms)
-		LoadAssemblies (1691ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (101ms)
+	LoadAllAssembliesAndSetupDomain (969ms)
+		LoadAssemblies (677ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1180ms)
-			TypeCache.Refresh (775ms)
-				TypeCache.ScanAssembly (713ms)
-			BuildScriptInfoCaches (356ms)
-			ResolveRequiredComponents (29ms)
-	FinalizeReload (3246ms)
+		AnalyzeDomain (464ms)
+			TypeCache.Refresh (327ms)
+				TypeCache.ScanAssembly (289ms)
+			BuildScriptInfoCaches (119ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1446ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2779ms)
+		SetupLoadedEditorAssemblies (1202ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (15ms)
-			BeforeProcessingInitializeOnLoad (885ms)
-			ProcessInitializeOnLoadAttributes (1296ms)
-			ProcessInitializeOnLoadMethodAttributes (535ms)
-			AfterProcessingInitializeOnLoad (41ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (371ms)
+			ProcessInitializeOnLoadAttributes (580ms)
+			ProcessInitializeOnLoadMethodAttributes (221ms)
+			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 19.41 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 4.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6956 unused Assets / (2.4 MB). Loaded Objects now: 7540.
-Memory consumption went from 125.2 MB to 122.8 MB.
-Total: 29.116400 ms (FindLiveObjects: 1.807600 ms CreateObjectMapping: 1.970000 ms MarkObjects: 18.252100 ms  DeleteObjects: 7.083300 ms)
+Unloading 6956 unused Assets / (2.3 MB). Loaded Objects now: 7540.
+Memory consumption went from 127.0 MB to 124.8 MB.
+Total: 20.985800 ms (FindLiveObjects: 4.040700 ms CreateObjectMapping: 1.963400 ms MarkObjects: 10.851100 ms  DeleteObjects: 4.127600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 47606.838718 seconds.
-  path: Assets/prefabs/B_LB_Truck.prefab
-  artifactKey: Guid(bcf799ffb4c1e564cb8e2785a4b9b95b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
-Start importing Assets/prefabs/B_LB_Truck.prefab using Guid(bcf799ffb4c1e564cb8e2785a4b9b95b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '6db3493497203ed38309e6e376dc7408') in 0.3212296 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 124
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '459bf64e64e05d7fc37055dcbee5da58') in 0.0205564 seconds
+  Time since last request: 446317.934038 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '7f778348925c98554dc21e75feb7b08b') in 0.1467401 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 13.29 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6940 unused Assets / (2.0 MB). Loaded Objects now: 7544.
-Memory consumption went from 123.7 MB to 121.6 MB.
-Total: 27.597300 ms (FindLiveObjects: 1.905500 ms CreateObjectMapping: 2.651100 ms MarkObjects: 18.534400 ms  DeleteObjects: 4.503400 ms)
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/prefabs/Crane third person Camera Variant.prefab
+  artifactKey: Guid(5acae6bf5b4099b4ba47906755df2389) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/prefabs/Crane third person Camera Variant.prefab using Guid(5acae6bf5b4099b4ba47906755df2389) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '5f133536b9e8d5a7da21334b8f4b2308') in 0.3924444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Scripts/Truck_Controller.cs
+  artifactKey: Guid(847a9f5dc92e68a4c80f887b589a172b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Scripts/Truck_Controller.cs using Guid(847a9f5dc92e68a4c80f887b589a172b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'f76a66ee8a20d5744d5181bc46a7b074') in 0.0067608 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '731a5432c92992d13d92afdb5a5fef48') in 0.0177436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scripts/Ground_PlayerController.cs
+  artifactKey: Guid(5b26c5e2fb7ceee4ebb6b8d1a4ae1571) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Scripts/Ground_PlayerController.cs using Guid(5b26c5e2fb7ceee4ebb6b8d1a4ae1571) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '5c567c2c01fadbc418a34ad14581c0dc') in 0.0048088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e187ba329250d3f0af4c049b721f221b') in 0.0434903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/art assets/Sayantan/Misc/ConcIndustrial_normal.tga
+  artifactKey: Guid(34d0451158d99134d8d574453e6fe9e2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Misc/ConcIndustrial_normal.tga using Guid(34d0451158d99134d8d574453e6fe9e2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '8322b0d1431e2a87d28d3f8aeec9aa17') in 0.0672385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/art assets/Sayantan/Misc/Mat_Skybox_Night.mat
+  artifactKey: Guid(3f310399ad38ea44b92db74a02fbe1b2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Misc/Mat_Skybox_Night.mat using Guid(3f310399ad38ea44b92db74a02fbe1b2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'b7ef0347d3aa0b069f7c4f61297b7c30') in 0.0262151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/_Recovery/0.unity
+  artifactKey: Guid(c806749aff9a08c4fa5dec696ec39a9e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/_Recovery/0.unity using Guid(c806749aff9a08c4fa5dec696ec39a9e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '78a6b0cd324fcae8a47f4f4a0045b360') in 0.0058138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/materials/ship grey.mat
+  artifactKey: Guid(76b37224b46d2ac459767f5655940178) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/materials/ship grey.mat using Guid(76b37224b46d2ac459767f5655940178) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '67e22ee3c2a1235d9c7f89dc9be2d400') in 0.0146919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/CARGO SHIPS I.pdf
+  artifactKey: Guid(7bc5f06af69c1bd47bc5de41662757ac) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/CARGO SHIPS I.pdf using Guid(7bc5f06af69c1bd47bc5de41662757ac) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '269cd36fe9dad475f32a6f6337aa7c79') in 0.0048268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/art assets/Sayantan/Misc/Mat_Skybox_Day.mat
+  artifactKey: Guid(f6fc61f3f8a8e2a469306d29b65d5c40) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Misc/Mat_Skybox_Day.mat using Guid(f6fc61f3f8a8e2a469306d29b65d5c40) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '8feced7e2e0da34adb842b91e37a7366') in 0.0071027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/DefaultNetworkPrefabs.asset
+  artifactKey: Guid(13dc6532a2dad574baf40b0a9f7882c0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/DefaultNetworkPrefabs.asset using Guid(13dc6532a2dad574baf40b0a9f7882c0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'd79ab7a3aec17114a977c80ca96f0826') in 0.0225957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 106
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '22b808035a8c6fd8f133205726fecab1') in 0.0060731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Truck_LowPoly/Materials/SkyBox.mat
+  artifactKey: Guid(3d17c1a5a35f4b940a67dbf929d70a9f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Truck_LowPoly/Materials/SkyBox.mat using Guid(3d17c1a5a35f4b940a67dbf929d70a9f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '1f50aa8d92d9197c70bb18a5476a61a3') in 0.0079568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Truck_LowPoly/Materials/Container.mat
+  artifactKey: Guid(eb1ad9cacc8989043b3c0f68804bbdc5) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Truck_LowPoly/Materials/Container.mat using Guid(eb1ad9cacc8989043b3c0f68804bbdc5) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '5b3b4a487fd55c2d904e02f51823251d') in 0.0276754 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Truck_LowPoly/Textures/Container/Truck low poly v7_Container_BaseColor.png
+  artifactKey: Guid(c8dc712ab64cdc844938219a66bf0fd0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Truck_LowPoly/Textures/Container/Truck low poly v7_Container_BaseColor.png using Guid(c8dc712ab64cdc844938219a66bf0fd0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'aacd813c45e32f6cb5f3cc95c622e0df') in 0.0179999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Truck_LowPoly/Textures/FrontMain/FrontMain_Base.png
+  artifactKey: Guid(0755e9b7f58f2f041a49e8ba29c51f84) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Truck_LowPoly/Textures/FrontMain/FrontMain_Base.png using Guid(0755e9b7f58f2f041a49e8ba29c51f84) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '344425d923263411ea81de40fba0f41f') in 0.0127617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Materials/Container Blue.mat
+  artifactKey: Guid(f084c13f049446d4394714d4da216e75) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Materials/Container Blue.mat using Guid(f084c13f049446d4394714d4da216e75) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '5be2d798dc3753eac2e9fc8a64db5097') in 0.009175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Brick.prefab
+  artifactKey: Guid(97292608443db6a44bbdf30420974711) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Brick.prefab using Guid(97292608443db6a44bbdf30420974711) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'b348d7ce8f7e7c276a6cb7c5788692c4') in 0.0333518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/40FT_Container Blue.prefab
+  artifactKey: Guid(032ae562652a4b245b1bf480730a0a1c) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/40FT_Container Blue.prefab using Guid(032ae562652a4b245b1bf480730a0a1c) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e15a1194f4ddd1e53831fcd9e9759840') in 0.0149048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Models/Container40F.fbx
+  artifactKey: Guid(8bb941787bcc0074f878e0e2f9b99dfe) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Models/Container40F.fbx using Guid(8bb941787bcc0074f878e0e2f9b99dfe) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '3f6ff362ce3307d08285c95728dbd11f') in 0.0439711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Meshes/lifebuoy.fbx
+  artifactKey: Guid(3e9902cd96feabd4ea027334ff443b20) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Meshes/lifebuoy.fbx using Guid(3e9902cd96feabd4ea027334ff443b20) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '3f31c11c5280be8dd460dfbb54f95ab8') in 0.01208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/40FT_Container Brick.prefab
+  artifactKey: Guid(e87e47785e00d364f832d5b1fa64647d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/40FT_Container Brick.prefab using Guid(e87e47785e00d364f832d5b1fa64647d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '63a80d83e82575e2be31c3b56bd0e578') in 0.0106509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Textures/c_Orange.png
+  artifactKey: Guid(180dab3c6de724e4ebd3b21288f7ccd3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Textures/c_Orange.png using Guid(180dab3c6de724e4ebd3b21288f7ccd3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'c04ffd519187f5bdd8f9b8c4c3b2a257') in 0.0131898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Yellow.prefab
+  artifactKey: Guid(08335805873ffd7479de14a7676abea4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Yellow.prefab using Guid(08335805873ffd7479de14a7676abea4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '8935225f9ae1ce2d7b31690e191f9a40') in 0.0122817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/Container_Ship_2.prefab
+  artifactKey: Guid(15c87c1ff1e0ccc4c9b709c539f3b6c1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/Container_Ship_2.prefab using Guid(15c87c1ff1e0ccc4c9b709c539f3b6c1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '8a7847d4a778c969e1e1bd30c8422980') in 0.0193534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 84
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Materials/Container Orange.mat
+  artifactKey: Guid(1899a8667be40ee40a9958ffab2b50a8) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Materials/Container Orange.mat using Guid(1899a8667be40ee40a9958ffab2b50a8) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '1a471127444e63cb5ae418dc87b98b6d') in 0.0133847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Textures/Tex_256Gradient.png
+  artifactKey: Guid(4d800ca67e3ace74c9f7f1ec947c44a9) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Textures/Tex_256Gradient.png using Guid(4d800ca67e3ace74c9f7f1ec947c44a9) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '504d3628489c3f6aa021875dc8280146') in 0.015168 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/ReadMe.txt
+  artifactKey: Guid(2456aa18592fe3b4cb8a4cbc75b852a4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/ReadMe.txt using Guid(2456aa18592fe3b4cb8a4cbc75b852a4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '5270abc1ad9aafc00e60794df8efd594') in 0.0069166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Orange.prefab
+  artifactKey: Guid(58cf3ed3419cb1245b499dfbff09d2e1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Orange.prefab using Guid(58cf3ed3419cb1245b499dfbff09d2e1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e187038c78c1b7c1f75f4510b23e1a1e') in 0.0121589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Red.prefab
+  artifactKey: Guid(459347a353ae2d84f9e7f1be1435e02d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/20FT_Container Red.prefab using Guid(459347a353ae2d84f9e7f1be1435e02d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '2a6e46dc86e3cb947f7b26549d709ec3') in 0.0114604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/lifebuoy.prefab
+  artifactKey: Guid(b6845a73d00862a46b74c53897c077f3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Prefabs/lifebuoy.prefab using Guid(b6845a73d00862a46b74c53897c077f3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '9afa2ff5a7d354c95fb1327ddeafd22b') in 0.0101009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Textures/c_Blue.png
+  artifactKey: Guid(3b78a6f6b09cf9647978516a8f964c98) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Textures/c_Blue.png using Guid(3b78a6f6b09cf9647978516a8f964c98) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'cbc34099b0e642f400439f2c6021375d') in 0.0108111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Meshes/DeckCrane.fbx
+  artifactKey: Guid(47f88d8cccffbb242b8ba3be195c5921) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Meshes/DeckCrane.fbx using Guid(47f88d8cccffbb242b8ba3be195c5921) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '61830fe8c88300619f4e76150541eebb') in 0.0126593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Truck_LowPoly/Materials/Front_Bottom_Part.mat
+  artifactKey: Guid(f9a0c1d9706bb194d8c602fc00b3bb89) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Truck_LowPoly/Materials/Front_Bottom_Part.mat using Guid(f9a0c1d9706bb194d8c602fc00b3bb89) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '9cccf71544f5137a177fea00d57e2103') in 0.0224206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Gameplay Scene.unity
+  artifactKey: Guid(9c918208e96fedb4280dcd32cdc4e57a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Scenes/Gameplay Scene.unity using Guid(9c918208e96fedb4280dcd32cdc4e57a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '627d09118ca18b6419d4b4d63a3bff21') in 0.0038087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/prefabs/B_Truck.prefab
+  artifactKey: Guid(e87cdfe61e8523b4c826f67f3fbcf36f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/prefabs/B_Truck.prefab using Guid(e87cdfe61e8523b4c826f67f3fbcf36f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'd1326a67824aedbe6e5bca54052f0bd1') in 0.0188988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 113
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Meshes/Container_Ship_2.fbx
+  artifactKey: Guid(dc0626a6005aa4c4cb551d4d9b5bcd61) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Meshes/Container_Ship_2.fbx using Guid(dc0626a6005aa4c4cb551d4d9b5bcd61) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '0aaa797056ebe9fc2db8d1c436f9e060') in 0.028766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 83
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'df2961718e935e506efb08ee6a7910ea') in 0.0328024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Truck_LowPoly/Textures/Container/Container_Base3.png
+  artifactKey: Guid(02d10204eea5cff49bf402a8e865499b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Truck_LowPoly/Textures/Container/Container_Base3.png using Guid(02d10204eea5cff49bf402a8e865499b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'd5710277015e551ffecaddbcf04a6868') in 0.0129272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/art assets/Megapoly.Art/Cargo Ships I/Materials/Sea.mat
+  artifactKey: Guid(317c1d60b1c08ba498a7dbf349f4c1fd) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Megapoly.Art/Cargo Ships I/Materials/Sea.mat using Guid(317c1d60b1c08ba498a7dbf349f4c1fd) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '8c69f1d33b68aeaa4bb85b6b9eed9ec0') in 0.0089091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.094407 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Textures/ContainerBlue2K_basecolor.tga
+  artifactKey: Guid(ede2fcb755ba55e4ea9d3135a807fbe0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Textures/ContainerBlue2K_basecolor.tga using Guid(ede2fcb755ba55e4ea9d3135a807fbe0) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '65faa0b79a91a4e67994a677aa4b29d7') in 0.0145106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-0.exr
+  artifactKey: Guid(cdf1f1b9670f1d5408eb55babf7c70b1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-0.exr using Guid(cdf1f1b9670f1d5408eb55babf7c70b1) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '729ef1d21380788f5cf21fcd3360fb29') in 0.0199521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-0.exr
+  artifactKey: Guid(6afda9f82313270439e3ea8a656e8c83) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-0.exr using Guid(6afda9f82313270439e3ea8a656e8c83) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '124bdd62d337d67270dc482eee96c342') in 0.012645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-1.exr
+  artifactKey: Guid(e3094626905362e49ae67afa7729b616) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-1.exr using Guid(e3094626905362e49ae67afa7729b616) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'ae349f6f7815b136140c8d16b8b54bc7') in 0.0121946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/Lightmap-0_comp_shadowmask.png
+  artifactKey: Guid(f57931a0abd521441b0914d7a8170095) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/Lightmap-0_comp_shadowmask.png using Guid(f57931a0abd521441b0914d7a8170095) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '711d7e53fd61e3a7783dc58ed33f6b81') in 0.0166677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont20FBlue.prefab
+  artifactKey: Guid(2f82398988470b44e904f466736629e9) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont20FBlue.prefab using Guid(2f82398988470b44e904f466736629e9) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '006de8f55fc089c6c80856cdd655b057') in 0.0079078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs
+  artifactKey: Guid(d359930cbabfcc7448e9f0e56039b644) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs using Guid(d359930cbabfcc7448e9f0e56039b644) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'd9a95536d2ac72df53cf27ccd35a3249') in 0.0076812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-4.exr
+  artifactKey: Guid(3ee015c447d340545834264093972545) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-4.exr using Guid(3ee015c447d340545834264093972545) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '3a4119bed5da09bfa6ea62963f6b835b') in 0.0077942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-25.exr
+  artifactKey: Guid(64559cb8195ba514183b1f5fef662bd3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-25.exr using Guid(64559cb8195ba514183b1f5fef662bd3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '00c13c20dcadd5baf19e45ae30e876b4') in 0.0122692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-5.exr
+  artifactKey: Guid(d7e7555f3a00ae6488b0d80566e43c12) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-5.exr using Guid(d7e7555f3a00ae6488b0d80566e43c12) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '70ce20ee183d795bab206585b7b83693') in 0.013273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-23.exr
+  artifactKey: Guid(8fa4e710dd5fa6d47b3b27d7db2c5382) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-23.exr using Guid(8fa4e710dd5fa6d47b3b27d7db2c5382) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '21c87aef0249d079aacaf21a855c6536') in 0.009714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-4.exr
+  artifactKey: Guid(a9212be497f068c43b12309286dfae2f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-4.exr using Guid(a9212be497f068c43b12309286dfae2f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '7deae1b00515a4b7d56d317f468f8afd') in 0.0087262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-21.exr
+  artifactKey: Guid(51e04aec64e96cd4eacd90a9b403c349) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-21.exr using Guid(51e04aec64e96cd4eacd90a9b403c349) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e65f516cb1d0f446e19676acafb8e3a0') in 0.0093133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-2.exr
+  artifactKey: Guid(77955f19ad5b28d45a77d1f8914fd455) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-2.exr using Guid(77955f19ad5b28d45a77d1f8914fd455) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '210d06bd4fa53f412042f4173cb6c704') in 0.0107156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-3.exr
+  artifactKey: Guid(c974d6be1b31dcf41ace62c4b779f4c4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-3.exr using Guid(c974d6be1b31dcf41ace62c4b779f4c4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'bbc3f80f1f0e487582d09d4ebd4adb82') in 0.0111494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/Lightmap-0_comp_light.exr
+  artifactKey: Guid(c50019650f3210b4b9b3e8f44a3dae52) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/Lightmap-0_comp_light.exr using Guid(c50019650f3210b4b9b3e8f44a3dae52) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '2b73a3ad5ee211d87d14313d9f5fec55') in 0.0141317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-18.exr
+  artifactKey: Guid(7514cec795d986242896e098a53cb280) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-18.exr using Guid(7514cec795d986242896e098a53cb280) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'c4f802d41d49030be1f6499013265986') in 0.0111744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-14.exr
+  artifactKey: Guid(ff81d4e1b5588654ca79d014a9bffc3d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-14.exr using Guid(ff81d4e1b5588654ca79d014a9bffc3d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '22b04bc043da924beb5ed8d4b039ccbd') in 0.0121194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs
+  artifactKey: Guid(427749d1fc2d12648a7acfc208590ea3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs using Guid(427749d1fc2d12648a7acfc208590ea3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '60022c450230c98f8d1b24f152106fd5') in 0.0053155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-3.exr
+  artifactKey: Guid(af7e4f300060c524ea8925e4a6674957) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-3.exr using Guid(af7e4f300060c524ea8925e4a6674957) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '1f75f3b0f81af2eb4a1851ff03be4ed8') in 0.0118628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-16.exr
+  artifactKey: Guid(3a683ce58abf8094a854adab73183cdd) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-16.exr using Guid(3a683ce58abf8094a854adab73183cdd) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '4dec5d45f31296673fb8d1529becad8e') in 0.0116877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-7.exr
+  artifactKey: Guid(257437ddd77f9a3469e6e7beaf0fd8b6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-7.exr using Guid(257437ddd77f9a3469e6e7beaf0fd8b6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '07bc4c93442888735e86a0be317af3d5') in 0.0109588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-12.exr
+  artifactKey: Guid(675845be7fe288a488a63ce3217f8529) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-12.exr using Guid(675845be7fe288a488a63ce3217f8529) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '95ca391164cd2c373613a16ae5abacf7') in 0.0108143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-20.exr
+  artifactKey: Guid(533271b542b5d6d46917cb58d84a0727) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-20.exr using Guid(533271b542b5d6d46917cb58d84a0727) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '4b7dc256b2dd0736843cbee93e61ce23') in 0.0125395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-15.exr
+  artifactKey: Guid(2f656a23ebb93944d88f2cd1e2ec22d4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-15.exr using Guid(2f656a23ebb93944d88f2cd1e2ec22d4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '67fb4219333abd86150cefc91813989f') in 0.0117905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/Lightmap-0_comp_shadowmask.png
+  artifactKey: Guid(be8feb666fde70a4987728e476bc0840) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/Lightmap-0_comp_shadowmask.png using Guid(be8feb666fde70a4987728e476bc0840) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '5972ea89d86d8cf36d50824f8c422f24') in 0.0113426 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/Lightmap-0_comp_light.exr
+  artifactKey: Guid(c605c06986f679d4091f697044582157) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/Lightmap-0_comp_light.exr using Guid(c605c06986f679d4091f697044582157) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'ce9ac5f83fe930a01e5344745bef9be5') in 0.0137046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-15.exr
+  artifactKey: Guid(06ea2ce975d992e42ba3826ce87570e6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-15.exr using Guid(06ea2ce975d992e42ba3826ce87570e6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '274214bd0168b948c4d22307c24b6de2') in 0.0109807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs
+  artifactKey: Guid(cf39edffa406b4d4c8db438c744f592a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs using Guid(cf39edffa406b4d4c8db438c744f592a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '047e7d16058dbc0203c91259ecb8021b') in 0.0047378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-9.exr
+  artifactKey: Guid(ee6167dd9ad24f748b562893642bc2a6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Night_Standard/ReflectionProbe-9.exr using Guid(ee6167dd9ad24f748b562893642bc2a6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'ce371bbc0280d0a04e8f521fb3fb60fc') in 0.0086301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont20FBeige.prefab
+  artifactKey: Guid(6d804e78e99fe9b4cbe149e7cdaea98e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Prefabs/Clean/PfCont20FBeige.prefab using Guid(6d804e78e99fe9b4cbe149e7cdaea98e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e4821013b48b4f525f21031c9a4da3cb') in 0.0076261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-6.exr
+  artifactKey: Guid(443816ded366b7148a67ccca4d60ce1d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-6.exr using Guid(443816ded366b7148a67ccca4d60ce1d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '203efbd8d46eeaffce11fe9dfee55491') in 0.0120178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-20.exr
+  artifactKey: Guid(f43fca35a1ca24c429f308ff57c6bcdc) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/art assets/Sayantan/Props/Large/Container_FREE/Scenes/Demo_Day_Standard/ReflectionProbe-20.exr using Guid(f43fca35a1ca24c429f308ff57c6bcdc) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '4406eb13305cc8f0141ef882ee19a883') in 0.0112077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
