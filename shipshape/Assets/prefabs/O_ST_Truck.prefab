@@ -114,10 +114,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047716884975990088}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -288,10 +288,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308469701274909889}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -402,7 +402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2521701234795602755, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}
       propertyPath: m_Name
-      value: Truck_Skin02 (1) Variant
+      value: O_ST_Truck
       objectReference: {fileID: 0}
     - target: {fileID: 5899448330389862982, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}
       propertyPath: m_Mass
@@ -417,8 +417,29 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1487797774491652432, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3277640402185832747}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2521701234795602755, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: -3635939668329250318}
   m_SourcePrefab: {fileID: 100100000, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}
+--- !u!1 &1976214204173633248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2521701234795602755, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}
+  m_PrefabInstance: {fileID: 4148393259522991523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3635939668329250318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976214204173633248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3199efb015493a4090f471abf73526a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TruckController
+  moveSpeed: 5
 --- !u!4 &3258272424441885939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1487797774491652432, guid: 56de6a8cd0b619e4e859691a5d32ef55, type: 3}

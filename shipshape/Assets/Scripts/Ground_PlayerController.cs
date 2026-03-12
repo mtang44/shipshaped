@@ -1,13 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.InputSystem;
-using System.IO;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using System.Net.NetworkInformation;
-using Unity.VisualScripting;
 using System;
 using Unity.Netcode;
 public class GroundPlayerController : NetworkBehaviour
@@ -58,7 +49,6 @@ public class GroundPlayerController : NetworkBehaviour
     {
         moveInput = Input.GetAxis("Vertical");
         turnInput = Input.GetAxis("Horizontal");
-        
     }
     private void GroundMovement()
     {

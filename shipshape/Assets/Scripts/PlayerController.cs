@@ -12,7 +12,6 @@ public class NewBehaviourScript : MonoBehaviour
 {
      public PlayerClass player_class;
 
-    // public Unit unit // not sure what this does 
 
     // movement controls
     public float moveSpeed = 5f;
@@ -50,7 +49,7 @@ public class NewBehaviourScript : MonoBehaviour
         
         // firstpov = new Vector3(x: 5, y: 5, z: 10);
         // thirdpov = new Vector3(x: 0, y: 4, z: -7);
-        showOverHeadView();
+        showThirdView();
         
     }
     // Update is called once per frame
@@ -95,9 +94,8 @@ public class NewBehaviourScript : MonoBehaviour
         else if (grabContainer.WasPerformedThisFrame() && holdingContainer)
         {
             // drop container code 
-            showOverHeadView();
+            //showOverHeadView();
             holdingContainer = false;
-            
             //
         }
 
