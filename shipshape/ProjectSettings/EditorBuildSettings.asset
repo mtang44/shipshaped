@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Elijah SampleScene.unity
     guid: 89fae4592f9e79d4390713091296472f
+  - enabled: 1
+    path: Assets/Scenes/Zander's Scene.unity
+    guid: 532bfeed556604b4c98a442c99038725
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
