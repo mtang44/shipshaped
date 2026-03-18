@@ -29,6 +29,20 @@ public class ContainerController : MonoBehaviour
             Debug.Log("container detected ship");
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("LAYER = " + collision.gameObject.layer);
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("HIT PLAYER");
+
+            if (onShip == false)
+            {
+                Destroy(collision.gameObject);
+            }
+        }
+    }
     public void setOnShip(bool state)
     {
         this.onShip = state;
@@ -37,18 +51,18 @@ public class ContainerController : MonoBehaviour
     {
         return this.onShip;
     }
-    private void checkStillOnShip()
+    public void checkStillOnShip()
     {
         Debug.DrawRay(transform.position,Vector3.down,Color.green, .1f);
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, .1f) && (hit.collider.CompareTag("Ship") || hit.collider.CompareTag("inventory")))
         {
-            Debug.Log("Container still on the ship");
+            //Debug.Log("Container still on the ship");
             setOnShip(true);
         }
         else
         {
-            Debug.Log("Container removed from ship");
+            //Debug.Log("Container removed from ship");
             //setOnShip(false);
             
             rb.isKinematic = false;

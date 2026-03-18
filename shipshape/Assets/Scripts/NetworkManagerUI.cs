@@ -43,7 +43,7 @@ public class NetworkManagerUI : MonoBehaviour
         clientButton.onClick.AddListener(() =>
         {
             networkManager.StartClient();
-            OnClientConnectedCallback(clientId);
+            //OnClientConnectedCallback(clientId);
 
 
         });

@@ -53,6 +53,7 @@ public class GroundPlayerController : NetworkBehaviour
         if (!IsOwner) return;
         checkPlayerInput();
         Movement();
+
     }
     private void checkPlayerInput()
     {
@@ -85,12 +86,28 @@ public class GroundPlayerController : NetworkBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
         }
     }
- // old movement system
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Debug.Log("LAYER = " + collision.gameObject.layer);
+    //    if (collision.gameObject.layer == 3)
+    //    {
+    //        Debug.Log("HIT PLAYER");
+    //        collision.gameObject.GetComponent<ContainerController>().checkStillOnShip();
+    //        bool isActive = collision.gameObject.GetComponent<ContainerController>().onShip;
+
+    //        if (isActive)
+    //        {
+    //            Destroy(this);
+    //        }
+    //    }
+    //}
+    // old movement system
     // private void updateMoveDirection()
     // {
-       
+
     //     moveDirection = playerControls.ReadValue<Vector3>();
     //     rb.velocity = moveDirection * moveSpeed; 
     // }
-    
+
 }

@@ -2384,7 +2384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1140517745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3324,6 +3324,8 @@ MonoBehaviour:
   serverButton: {fileID: 1079658958}
   hostButton: {fileID: 1203580113}
   clientButton: {fileID: 2045243007}
+  cranePrefab: {fileID: 0}
+  playerPrefab: {fileID: 0}
 --- !u!1001 &1472317240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4230,44 +4232,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1173228880094324177, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: GlobalObjectIdHash
-      value: 2068462564
-      objectReference: {fileID: 0}
-    - target: {fileID: 1173228880094324177, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: InScenePlacedSourceGlobalObjectIdHash
-      value: 4104837441
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478212820631539655, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: GlobalObjectIdHash
-      value: 3088800484
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478212820631539655, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: SceneMigrationSynchronization
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1478212820631539655, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: InScenePlacedSourceGlobalObjectIdHash
-      value: 840456574
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341837581951233256, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
+    - target: {fileID: 1173228880094324177, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 869850402
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341837581951233256, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: InScenePlacedSourceGlobalObjectIdHash
-      value: 373896213
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489790502000178593, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489790502000178593, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489790502000178593, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 2068462564
       objectReference: {fileID: 0}
     - target: {fileID: 7489790502000178593, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4312,6 +4282,10 @@ PrefabInstance:
     - target: {fileID: 8501252227990106818, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
       propertyPath: m_Name
       value: GroundPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501252227990106818, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
