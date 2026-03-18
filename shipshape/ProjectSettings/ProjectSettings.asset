@@ -793,11 +793,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 7b2d491b-47e9-494f-a69e-5dba334ce0b6
+  cloudProjectId: fd98f8ce-c96e-45ec-a5e8-96b0ee2f6060
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: shipshape
-  organizationId: unity_4cekaliber
+  organizationId: mtang44
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
