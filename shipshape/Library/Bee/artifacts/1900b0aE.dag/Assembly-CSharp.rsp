@@ -497,6 +497,7 @@
 "Assets/Scripts/PlayerClass.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ShipController.cs"
+"Assets/Scripts/Timer_Script.cs"
 "Assets/Scripts/Truck_Controller.cs"
 "Assets/Scripts/Truck_Spawner.cs"
 -langversion:9.0
