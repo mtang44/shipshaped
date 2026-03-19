@@ -11,7 +11,9 @@ public class TimerManager : MonoBehaviour
     public float totalTime = 0f; 
 
     // Boolean to control if the timer is running
-    private bool timerIsRunning = false; 
+    private bool timerIsRunning = false;
+
+    [SerializeField] private GameObject player;
 
     void Start()
     {
@@ -24,7 +26,7 @@ public class TimerManager : MonoBehaviour
         if (timerIsRunning)
         {   
             
-            if (true) //replace with end condition (Player death)
+            if (player.activeSelf == true) //replace with end condition (Player death)
             {
                 // Increase timer every frame
                 totalTime += Time.deltaTime; 

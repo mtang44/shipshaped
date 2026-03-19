@@ -29,6 +29,20 @@ public class ContainerController : MonoBehaviour
             Debug.Log("container detected ship");
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("LAYER = " + collision.gameObject.layer);
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("HIT PLAYER");
+
+            if (onShip == false)
+            {
+                collision.gameObject.SetActive(false);
+            }
+        }
+    }
     public void setOnShip(bool state)
     {
         this.onShip = state;

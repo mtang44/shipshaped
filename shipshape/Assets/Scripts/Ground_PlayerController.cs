@@ -20,6 +20,7 @@ public class GroundPlayerController : NetworkBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float turnSpeed = 10f;
+    public bool isAlive;
 
 
     private void OnEnable()
@@ -35,6 +36,7 @@ public class GroundPlayerController : NetworkBehaviour
     {
         GameManager.Instance.player = gameObject;
         controller = GetComponent<CharacterController>();
+        isAlive = true;
 
     }
     // Update is called once per frame
