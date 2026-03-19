@@ -43,7 +43,7 @@ public class GroundPlayerController : NetworkBehaviour
     void Update()
     {
         // reads user input and creates direction
-        if (!IsOwner) return;
+        // if (!IsOwner) return;
         checkPlayerInput();
         Movement();
     }
