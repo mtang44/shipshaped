@@ -32,7 +32,7 @@ public class ContainerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("LAYER = " + collision.gameObject.layer);
+        Debug.Log("HIT TAG: " + collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("HIT PLAYER");

@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 8980354124747830881}
   m_Layer: 0
   m_Name: Ship Bounds (2)
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 2041608868517288267}
   m_Layer: 0
   m_Name: Ship Bounds
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1894,7 +1894,7 @@ GameObject:
   - component: {fileID: 1803190055662006165}
   m_Layer: 0
   m_Name: Ship Bounds (1)
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2034,7 +2034,7 @@ GameObject:
   - component: {fileID: 3629358873093713907}
   m_Layer: 0
   m_Name: Ship Bounds (3)
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2260,11 +2260,11 @@ GameObject:
   - component: {fileID: 2934071430661392343}
   m_Layer: 0
   m_Name: Ship Bounds
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2934071430661392343
 Transform:
   m_ObjectHideFlags: 0
