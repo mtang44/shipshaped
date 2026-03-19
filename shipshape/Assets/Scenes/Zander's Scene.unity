@@ -1037,7 +1037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &525073993
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1071,6 +1071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimerManager
   timerText: {fileID: 525073995}
   totalTime: 0
+  player: {fileID: 0}
 --- !u!114 &525073995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,6 +1843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimerManager
   timerText: {fileID: 740785711}
   totalTime: 0
+  player: {fileID: 2093858181}
 --- !u!114 &740785711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3446,7 +3448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1386889104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3480,6 +3482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimerManager
   timerText: {fileID: 1386889106}
   totalTime: 0
+  player: {fileID: 0}
 --- !u!114 &1386889106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3733,7 +3736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1411606583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4794,7 +4797,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1173228880094324177, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 2068462564
+      value: 2354040458
       objectReference: {fileID: 0}
     - target: {fileID: 1173228880094324177, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
       propertyPath: InScenePlacedSourceGlobalObjectIdHash
@@ -4907,6 +4910,10 @@ PrefabInstance:
     - target: {fileID: 8501252227990106818, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
       propertyPath: m_Name
       value: GroundPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501252227990106818, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4144344855711285186, guid: 26c1ae33e0642a74baa8e6ff5b1f2b3a, type: 3}
@@ -5314,7 +5321,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2132161110 stripped
@@ -5475,6 +5482,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2934071430661392343, guid: fdcebe0380097da43aed43aedda1d768, type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3307235566460896156, guid: fdcebe0380097da43aed43aedda1d768, type: 3}
+      propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3307235566460896156, guid: fdcebe0380097da43aed43aedda1d768, type: 3}
