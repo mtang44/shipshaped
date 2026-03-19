@@ -20,6 +20,12 @@ public class GroundPlayerController : NetworkBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float turnSpeed = 10f;
+    [SerializeField] private float shipFrontX = 42.5f;
+    [SerializeField] private float shipBackX = 9.7f;
+    [SerializeField] private float shipLeftSideZ = 50f;
+    [SerializeField] private float shipRightSideZ = 41.3f;
+    [SerializeField] private GameObject player;
+
     public bool isAlive;
 
 
@@ -49,8 +55,16 @@ public class GroundPlayerController : NetworkBehaviour
     }
     private void checkPlayerInput()
     {
-        moveInput = Input.GetAxis("Vertical");
-        turnInput = Input.GetAxis("Horizontal");
+        if ((player.transform.position.x < shipFrontX) && (player.transform.position.x > shipBackX) && (player.transform.position.z < shipLeftSideZ) && (player.transform.position.z > shipRightSideZ))
+        {
+            moveInput = Input.GetAxis("Vertical");
+            turnInput = Input.GetAxis("Horizontal");
+        }
+        else
+        {
+            moveInput = 0;
+            turnInput = 0;
+        }
     }
     private void GroundMovement()
     {
