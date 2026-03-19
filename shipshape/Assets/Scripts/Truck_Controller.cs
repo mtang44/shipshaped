@@ -17,7 +17,7 @@ public float moveSpeed = 10f;
         {
             DespawnTruck();
         }
-        if(transform.position.x <= 25)
+        if(transform.position.x <= 20)
         {
             MoveTruck();
         }
@@ -31,7 +31,7 @@ public float moveSpeed = 10f;
     }
     public void DespawnTruck()
     {
-        if(transform.position.x < 70)
+        if(transform.position.x < 65)
         {
             MoveTruck();
         }

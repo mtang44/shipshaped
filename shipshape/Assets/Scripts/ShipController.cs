@@ -27,7 +27,6 @@ public class ShipController : MonoBehaviour
             ContainerController triggerContainer = other.GetComponent<ContainerController>();
             if (!triggerContainer.getOnShip())
             {
-                inventory.Add(other.gameObject);
                  Debug.Log("container added to ship ");
                 containerCount += 1;
                 Debug.Log("# of container = " + containerCount);

@@ -20,13 +20,9 @@ public class GroundPlayerController : NetworkBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float turnSpeed = 10f;
-    [SerializeField] private float shipFrontX = 42.5f;
-    [SerializeField] private float shipBackX = 9.7f;
-    [SerializeField] private float shipLeftSideZ = 50f;
-    [SerializeField] private float shipRightSideZ = 41.3f;
     [SerializeField] private GameObject player;
-
     public bool isAlive;
+    [SerializeField] public Animator animator;
 
 
     private void OnEnable()
@@ -42,6 +38,7 @@ public class GroundPlayerController : NetworkBehaviour
     {
         GameManager.Instance.player = gameObject;
         controller = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>(true);
         isAlive = true;
 
     }
@@ -65,7 +62,19 @@ public class GroundPlayerController : NetworkBehaviour
         Vector3 move = new Vector3(turnInput, 0, moveInput);
         move.y = 0;
         move *= moveSpeed;
+        if(move == Vector3.zero)
+        {
+             Debug.Log("still");
+            animator.SetTrigger("Still");
+        }
+        else
+        {
+            Debug.Log("isMoving");
+            
+            animator.SetTrigger("Moving");
+        }
         controller.Move(move * Time.deltaTime);
+
         //playerRB.angularVelocity = Vector3.zero;
     }
     private void Movement()
@@ -83,12 +92,5 @@ public class GroundPlayerController : NetworkBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
         }
     }
- // old movement system
-    // private void updateMoveDirection()
-    // {
-       
-    //     moveDirection = playerControls.ReadValue<Vector3>();
-    //     rb.velocity = moveDirection * moveSpeed; 
-    // }
     
 }
