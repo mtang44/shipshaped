@@ -78,6 +78,7 @@ public class NewBehaviourScript : MonoBehaviour
                 showThirdView();
                 holdingContainer = true;
                 selectedContainer = hitinfo.rigidbody.gameObject;
+                selectedContainer.GetComponent<ContainerController>().setOnShip(false);
                 selectedContainer.GetComponent<Rigidbody>().isKinematic = false;
                 selectedContainer.transform.SetParent(null); // removes child container from parent truck
                 
@@ -85,6 +86,7 @@ public class NewBehaviourScript : MonoBehaviour
             }
             else
             {
+                
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 3, Color.red, 10f);
                 // Debug.Log("Not touching");
             }
@@ -118,6 +120,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
         if (holdingContainer)
         {
+            selectedContainer.GetComponent<ContainerController>().setOnShip(false);
             selectedContainer.transform.position = new Vector3(x: transform.position.x, y: transform.position.y - 3, z: transform.position.z);
             selectedContainer.transform.rotation = rb.transform.rotation;
         }

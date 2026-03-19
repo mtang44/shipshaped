@@ -55,22 +55,14 @@ public class GroundPlayerController : NetworkBehaviour
     }
     private void checkPlayerInput()
     {
-        if ((player.transform.position.x < shipFrontX) && (player.transform.position.x > shipBackX) && (player.transform.position.z < shipLeftSideZ) && (player.transform.position.z > shipRightSideZ))
-        {
+       
             moveInput = Input.GetAxis("Vertical");
             turnInput = Input.GetAxis("Horizontal");
-        }
-        else
-        {
-            moveInput = 0;
-            turnInput = 0;
-        }
     }
     private void GroundMovement()
     {
         
         Vector3 move = new Vector3(turnInput, 0, moveInput);
-        
         move.y = 0;
         move *= moveSpeed;
         controller.Move(move * Time.deltaTime);

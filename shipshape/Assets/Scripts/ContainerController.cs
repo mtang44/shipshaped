@@ -1,24 +1,29 @@
-using System.Collections;
+
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class ContainerController : MonoBehaviour
 {
     public bool onShip;
     public Rigidbody rb;
+    
+    public List<GameObject> shipEdges;
+    private Collider ownCollider;
     // Start is called before the first frame update
     void Start()
     {
+        ownCollider = GetComponent<Collider>();
         onShip = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (onShip)
-        {
-            checkStillOnShip();
-        }
+        // if (onShip)
+        // {
+        //     checkStillOnShip();
+        // }
     }
     void OnTriggerEnter(Collider other )
     {
@@ -26,17 +31,20 @@ public class ContainerController : MonoBehaviour
         {
             rb.linearVelocity = Vector3.zero;
            // rb.isKinematic = true;
-            Debug.Log("container detected ship");
+            UnityEngine.Debug.Log("container detected ship");
+        }
+        if(other.gameObject.tag == "Boundary")
+        {
+            Physics.IgnoreCollision(ownCollider,other.gameObject.GetComponent<Collider>(), true);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("HIT TAG: " + collision.gameObject.tag);
+        UnityEngine.Debug.Log("HIT TAG: " + collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("HIT PLAYER");
-
+            UnityEngine.Debug.Log("HIT PLAYER");
             if (onShip == false)
             {
                 collision.gameObject.SetActive(false);
@@ -53,19 +61,24 @@ public class ContainerController : MonoBehaviour
     }
     private void checkStillOnShip()
     {
-        Debug.DrawRay(transform.position,Vector3.down,Color.green, .1f);
+        UnityEngine.Debug.DrawRay(transform.position,Vector3.down,Color.green, .1f);
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, .1f) && (hit.collider.CompareTag("Ship") || hit.collider.CompareTag("inventory")))
         {
-            Debug.Log("Container still on the ship");
-            setOnShip(true);
+            
+           if(!onShip)
+            {
+                setOnShip(true);
+            } 
         }
         else
         {
-            Debug.Log("Container removed from ship");
-            //setOnShip(false);
-            
-            rb.isKinematic = false;
+            UnityEngine.Debug.Log("Container removed from ship");
+            if(onShip)
+            {
+                setOnShip(false);
+            }
+           
         }
     }
 }
