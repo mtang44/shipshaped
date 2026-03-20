@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using Unity.Netcode;
+using TMPro;
 public class GroundPlayerController : NetworkBehaviour
 {
     // public PlayerClass player_class;
@@ -20,10 +21,9 @@ public class GroundPlayerController : NetworkBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float turnSpeed = 10f;
-    [SerializeField] private GameObject player;
     public bool isAlive;
     [SerializeField] public Animator animator;
-
+    
 
     private void OnEnable()
     {
@@ -40,6 +40,7 @@ public class GroundPlayerController : NetworkBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>(true);
         isAlive = true;
+       
 
     }
     // Update is called once per frame
@@ -49,6 +50,8 @@ public class GroundPlayerController : NetworkBehaviour
         // if (!IsOwner) return;
         checkPlayerInput();
         Movement();
+
+        
     }
     private void checkPlayerInput()
     {
@@ -64,12 +67,12 @@ public class GroundPlayerController : NetworkBehaviour
         move *= moveSpeed;
         if(move == Vector3.zero)
         {
-             Debug.Log("still");
+             //Debug.Log("still");
             animator.SetTrigger("Still");
         }
         else
         {
-            Debug.Log("isMoving");
+            //Debug.Log("isMoving");
             
             animator.SetTrigger("Moving");
         }

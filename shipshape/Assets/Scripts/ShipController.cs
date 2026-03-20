@@ -1,23 +1,78 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class ShipController : MonoBehaviour
 {
     public List<GameObject> inventory;
     public int containerCount;
-    // Start is called before the first frame update
+    private GameObject canvasBackground;
+    private GameObject playerScore;
+    private GameObject inGameScore;
+    private GameObject player;
+    private GameObject buttonGameObject;
+    private Button nextButton;
+    private int playerDeaths;
+    private int playerNum;
+
+
     void Start()
     {
         containerCount = 0;
         inventory = new List<GameObject>();
+        canvasBackground = GameObject.Find("Canvas (1)canvasBackground");
+        playerScore = GameObject.Find("Canvas (1)/roundOver");
+        inGameScore = GameObject.Find("Canvas (1)/Player 1 TimerText");
+        buttonGameObject = GameObject.Find("Canvas (1)/Button");
+        nextButton = buttonGameObject.GetComponent<Button>();
+        player = GameObject.Find("GroundPlayer");
+        playerScore.SetActive(false);
+        canvasBackground.SetActive(false);
+        buttonGameObject.SetActive(false);
+
+        playerDeaths = 0;
+        playerNum = 1;
+
+        nextButton.onClick.AddListener(() =>
+        {
+            playerScore.SetActive(false);
+            canvasBackground.SetActive(false);
+            inGameScore.GetComponent<TimerManager>().totalTime = 0f;
+            inGameScore.SetActive(true);
+            buttonGameObject.SetActive(false);
+        });
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (player.activeSelf == false)
+        {
+            player.SetActive(true);
+            displayScore();
+        }
 
+    }
 
+    void displayScore()
+    {
+        playerDeaths++;
+        if (playerDeaths % 2 != 0)
+        {
+            playerNum = 1;
+        }
+        else
+        {
+            playerNum = 2;
+        }
+        canvasBackground.SetActive(true);
+        playerScore.SetActive(true);
+        inGameScore.SetActive(false);
+        playerScore.GetComponent<TextMeshProUGUI>().text = "Player " + playerNum + "score: "+ inGameScore.GetComponent<TimerManager>().DisplayTime(inGameScore.GetComponent<TimerManager>().totalTime);
+        buttonGameObject.SetActive(true);
     }
     void OnTriggerEnter(Collider other)
     {

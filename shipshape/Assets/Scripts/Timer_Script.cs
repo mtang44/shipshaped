@@ -29,8 +29,8 @@ public class TimerManager : MonoBehaviour
             if (player.activeSelf == true) //replace with end condition (Player death)
             {
                 // Increase timer every frame
-                totalTime += Time.deltaTime; 
-                DisplayTime(totalTime);
+                totalTime += Time.deltaTime;
+                timerText.text = DisplayTime(totalTime);
             }
             else
             {
@@ -42,14 +42,14 @@ public class TimerManager : MonoBehaviour
         }
     }
 
-    void DisplayTime(float timeToDisplay)
+    public string DisplayTime(float timeToDisplay)
     {
         // Format the float value into minutes and seconds (00:00 format)
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         float milliSeconds = (timeToDisplay % 1) * 100;
 
-        timerText.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, milliSeconds);
+        return string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, milliSeconds);
     }
 }
 

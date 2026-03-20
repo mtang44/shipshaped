@@ -10,11 +10,13 @@ public class ContainerController : MonoBehaviour
     
     public List<GameObject> shipEdges;
     private Collider ownCollider;
-    // Start is called before the first frame update
+   
+
     void Start()
     {
         ownCollider = GetComponent<Collider>();
         onShip = false;
+        
     }
 
     // Update is called once per frame
@@ -24,6 +26,8 @@ public class ContainerController : MonoBehaviour
         // {
         //     checkStillOnShip();
         // }
+
+       
     }
     void OnTriggerEnter(Collider other )
     {
@@ -73,7 +77,7 @@ public class ContainerController : MonoBehaviour
         }
         else
         {
-            UnityEngine.Debug.Log("Container removed from ship");
+            //UnityEngine.Debug.Log("Container removed from ship");
             if(onShip)
             {
                 setOnShip(false);
