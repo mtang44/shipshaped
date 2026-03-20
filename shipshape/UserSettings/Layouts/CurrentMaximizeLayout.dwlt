@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 30923
+  controlID: 391
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 30924
+  controlID: 392
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 30925
+  controlID: 393
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 246.66667
     height: 331.33334
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -249,33 +249,20 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 67.66666}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -80348
-      - m_Data: -70624
-      - m_Data: -56254
-      - m_Data: -55168
-      - m_Data: -52476
-      - m_Data: -51140
-      - m_Data: -44494
-      - m_Data: -42316
-      - m_Data: -40650
-      - m_Data: -39054
-      - m_Data: -24804
-      - m_Data: -12336
-      - m_Data: -1356
-      - m_Data: 48408
-      - m_Data: 48538
-      - m_Data: 91626
-      - m_Data: 91696
-      - m_Data: 109646
+      - m_Data: -4720
+      - m_Data: -1298
+      - m_Data: 48268
+      - m_Data: 52264
+      - m_Data: 52334
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 'Title '
-        m_OriginalName: 'Title '
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -283,10 +270,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: 109776
+          m_Data: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 5}
@@ -316,8 +303,8 @@ MonoBehaviour:
     y: 0
     width: 655.3333
     height: 331.33334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -1013,7 +1000,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1023,7 +1010,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\mcst2\OneDrive\Documents\Desktop\Unity\CMPM 176\shipshaped\shipshape
   m_LockTracker:
@@ -1032,12 +1019,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
     m_SelectedIDs:
-    - m_Data: 50498
+    - m_Data: 50008
     m_LastClickedID:
-      m_Data: 50498
+      m_Data: 50008
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50380
+    - m_Data: 49868
     - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1071,7 +1058,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50380
+    - m_Data: 49868
     - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1100,9 +1087,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -81624
-    m_LastClickedInstanceID: -81624
-    m_HadKeyboardFocusLastEvent: 0
+    - m_Data: 52290
+    m_LastClickedInstanceID: 52290
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1190,8 +1177,8 @@ MonoBehaviour:
     y: 0
     width: 362
     height: 564.6667
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -1241,8 +1228,8 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -81624
-  m_LastVerticalScrollValue: 636.00006
+  m_LastInspectedObjectInstanceID: 52290
+  m_LastVerticalScrollValue: 540
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
