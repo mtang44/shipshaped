@@ -67,18 +67,15 @@ public class GroundPlayerController : NetworkBehaviour
         move *= moveSpeed;
         if(move == Vector3.zero)
         {
-             //Debug.Log("still");
             animator.SetTrigger("Still");
         }
         else
         {
-            //Debug.Log("isMoving");
             
             animator.SetTrigger("Moving");
         }
         controller.Move(move * Time.deltaTime);
 
-        //playerRB.angularVelocity = Vector3.zero;
     }
     private void Movement()
     {

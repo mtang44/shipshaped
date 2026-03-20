@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.ComponentModel;
+using Unity.VisualScripting;
 
 public class ShipController : MonoBehaviour
 {
-    public List<GameObject> inventory;
+  
+    [SerializeField]
+     public GameObject GroundPlayer;
     public int containerCount;
+
+    public  GameObject ContainerHolder;
+    [SerializeField]
     private GameObject canvasBackground;
+    [SerializeField]
     private GameObject playerScore;
+    [SerializeField]
     private GameObject inGameScore;
-    private GameObject player;
+   
+   [SerializeField]
     private GameObject buttonGameObject;
     private Button nextButton;
     private int playerDeaths;
@@ -21,27 +31,17 @@ public class ShipController : MonoBehaviour
     void Start()
     {
         containerCount = 0;
-        inventory = new List<GameObject>();
-        canvasBackground = GameObject.Find("Canvas (1)canvasBackground");
-        playerScore = GameObject.Find("Canvas (1)/roundOver");
-        inGameScore = GameObject.Find("Canvas (1)/Player 1 TimerText");
-        buttonGameObject = GameObject.Find("Canvas (1)/Button");
         nextButton = buttonGameObject.GetComponent<Button>();
-        player = GameObject.Find("GroundPlayer");
-        playerScore.SetActive(false);
         canvasBackground.SetActive(false);
-        buttonGameObject.SetActive(false);
 
         playerDeaths = 0;
         playerNum = 1;
 
         nextButton.onClick.AddListener(() =>
         {
-            playerScore.SetActive(false);
             canvasBackground.SetActive(false);
             inGameScore.GetComponent<TimerManager>().totalTime = 0f;
             inGameScore.SetActive(true);
-            buttonGameObject.SetActive(false);
         });
 
     }
@@ -49,14 +49,25 @@ public class ShipController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.activeSelf == false)
+        if (GroundPlayer.activeInHierarchy == false)
         {
-            player.SetActive(true);
+            
+            clearScene();
             displayScore();
+            GroundPlayer.SetActive(true);
         }
 
     }
+    public void clearScene()
+    {
+        Transform parent = ContainerHolder.transform;
 
+        for (int i = parent.childCount - 1; i >= 0; i--)
+        {
+            Debug.Log("Clearing scene");
+            Destroy(parent.GetChild(i).gameObject);
+        }
+    }
     void displayScore()
     {
         playerDeaths++;
@@ -69,50 +80,19 @@ public class ShipController : MonoBehaviour
             playerNum = 2;
         }
         canvasBackground.SetActive(true);
-        playerScore.SetActive(true);
         inGameScore.SetActive(false);
-        playerScore.GetComponent<TextMeshProUGUI>().text = "Player " + playerNum + "score: "+ inGameScore.GetComponent<TimerManager>().DisplayTime(inGameScore.GetComponent<TimerManager>().totalTime);
-        buttonGameObject.SetActive(true);
+        playerScore.GetComponent<TextMeshProUGUI>().text = "Player " + playerNum + " score: "+ inGameScore.GetComponent<TimerManager>().DisplayTime(inGameScore.GetComponent<TimerManager>().totalTime);
     }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 3)
         {
-            
             ContainerController triggerContainer = other.GetComponent<ContainerController>();
             if (!triggerContainer.getOnShip())
             {
-                 Debug.Log("container added to ship ");
-                containerCount += 1;
-                Debug.Log("# of container = " + containerCount);
-                Debug.Log("onShip set to true");
                 triggerContainer.setOnShip(true);
             }
             else Debug.Log("container already on ship");
         }
-    }
-    // void OnTriggerExit(Collider other)
-    // {
-    //     Debug.Log("ship detected exit collision");
-
-    //     if (other.gameObject.layer == 3)
-    //     {
-    //         ContainerController currentContainerScript = other.GetComponentInParent<ContainerController>();
-    //         if (currentContainerScript.getOnShip())
-    //         {
-    //             currentContainerScript.setOnShip(false);
-    //             inventory.Remove(other.gameObject);
-
-    //             Debug.Log("container was removed");
-    //             Debug.Log("onShip set to false");
-    //             containerCount -= 1;
-    //             Debug.Log("# of containers = " + containerCount);
-    //         }
-    //     }
-   // }
-
-public void checkShipBalance()
-    {
-
     }
 }

@@ -8,15 +8,6 @@ using System.Linq;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public enum GameState
-    {
-        MAINMENU,
-        INGAME,
-        LEVELCOMPLETE,
-        GAMEOVER
-    }
-    public GameState state;
-
     private static GameManager theInstance;
     public static GameManager Instance
     {
@@ -29,17 +20,6 @@ public class GameManager : MonoBehaviour
     }
     // player controls
     public GameObject player;
-
-    public int getCurrentWaveNumber()
-    {
-        return 0;
-    }
-    // private GameManager()
-    // {
-    //     // do something
-
-    // }
-
 
 
     void Start()

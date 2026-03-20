@@ -1,13 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine.InputSystem;
-using System.IO;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using System.Net.NetworkInformation;
-using Unity.VisualScripting;
 public class NewBehaviourScript : MonoBehaviour
 {
      public PlayerClass player_class;
@@ -22,6 +15,7 @@ public class NewBehaviourScript : MonoBehaviour
     public bool holdingContainer;
     public Camera BottomCamera;
     public Camera ThirdPOVCamera;
+    public GameObject ContainerHolder;
     [SerializeField] LayerMask layermask;
     Vector3 moveDirection = Vector3.zero;
     Quaternion rotationAmount;
@@ -80,7 +74,7 @@ public class NewBehaviourScript : MonoBehaviour
                 selectedContainer = hitinfo.rigidbody.gameObject;
                 selectedContainer.GetComponent<ContainerController>().setOnShip(false);
                 selectedContainer.GetComponent<Rigidbody>().isKinematic = false;
-                selectedContainer.transform.SetParent(null); // removes child container from parent truck
+                selectedContainer.transform.SetParent(ContainerHolder.transform); // removes child container from parent truck
                 
                
             }
